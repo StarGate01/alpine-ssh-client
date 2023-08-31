@@ -1,3 +1,6 @@
+[![Build Status](https://drone-github.chrz.de/api/badges/StarGate01/alpine-ssh-client/status.svg)](https://drone-github.chrz.de/StarGate01/alpine-ssh-client)
+[![Docker Pulls](https://img.shields.io/docker/pulls/stargate01/ssh-client)](https://hub.docker.com/r/stargate01/ssh-client)
+
 # alpine-ssh-client
 
 A little docker image based on alpine with ssh-client and bash
@@ -7,7 +10,7 @@ A little docker image based on alpine with ssh-client and bash
 ```yml
 deploy_staging:
   stage: deploy
-  image: kroniak/ssh-client
+  image: stargate01/ssh-client
   environment:
     name: staging
     url: https://sample-app.net
@@ -28,11 +31,4 @@ deploy_staging:
 
 ## using from docker
 
-`docker run -it --rm kroniak/ssh-client bash`
-
-## supported tags and respective Dockerfile links
-
-- 3.12 [3.12/Dockerfile](3.12/Dockerfile)
-- 3.13 [3.13/Dockerfile](3.13/Dockerfile)
-- 3.14 [3.14/Dockerfile](3.14/Dockerfile)
-- 3.15, latest [3.15/Dockerfile](3.15/Dockerfile)
+`docker run -it --rm stargate01/ssh-client bash`
